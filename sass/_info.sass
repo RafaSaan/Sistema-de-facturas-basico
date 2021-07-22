@@ -1,11 +1,11 @@
 @use "mixin" as mix
 .fac
-    display: flex
+    display: grid
+    grid-template-columns: repeat(auto-fit,minmax(35rem,1fr))
     &__info        
-        @include mix.size(30vw,85vh)
+        @include mix.size(95%,85vh)
         @include mix.center()
         flex-direction: column
-        justify-content: normal
     &__subtitle
         font-size: 2.3rem  
     &__form
@@ -19,7 +19,7 @@
         border: none
         height: 4.5rem
         outline: none
-        border-radius: 2.3rem
+        border-radius: 1rem
         background: #e0e0e0
         box-shadow:  1px -4px 0px #cccccc,-1px 4px 0px #f4f4f4
     &__btn
@@ -30,4 +30,3 @@
         border-radius: 2.3rem
         background: #e0e0e0
         box-shadow:  1px -1px 5px #5a5a5a,-5px 5px 5px #ffffff
-    

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +9,22 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Sistema de facturacion</title>
 </head>
+
 <body>
-    <h1 class="title">Sistema de facturacion</h1>
+    <h1 class="title">Sistema de pago</h1>
     <div class="fac">
         <section class="fac__info">
             <h3 class="fac__subtitle">Ingrese sus datos</h3>
             <form action="" class="fac__form">
-                <label for="nombre">Nombre</label>
-                <input type="text" class="fac__data" id="nombre" placeholder="Nombre" autocomplete="off">
-                <label for="">RFC</label>
+                <label for="nombre">Nombre*</label>
+                <input type="text" class="fac__data" id="name" placeholder="Nombre" autocomplete="off">
+                <label for="">RFC*</label>
                 <input type="text" class="fac__data" id="rfc" placeholder="RFC" autocomplete="off">
-                <label for="">Direccion</label>
+                <label for="">Direccion*</label>
                 <input type="text" class="fac__data" id="direc" placeholder="Direccion" autocomplete="off">
-                <label for="">contacto</label>
-                <input type="text" class="fac__data" id="contac" placeholder="Contacto" autocomplete="off">
-                <button class="fac__btn" id="btn">Enviar</button>
+                <label for="">Contacto</label>
+                <input type="text" class="fac__data" id="contact" placeholder="Contacto" autocomplete="off">
+                <button class="fac__btn" id="btn-send">Enviar</button>
             </form>
         </section>
         <section class="res">
@@ -33,19 +35,38 @@
                 </div>
                 <div class="res__info">
                     <ul class="res__list">
-                        <li class="res__data" id="li-nombre"><span class="negritas">nombre:</span></li>
-                        <li class="res__data" id="li-rfc"><span class="negritas">RCF:</span></li>
-                        <li class="res__data" id="li-direc"><span class="negritas">direccion:</span></li>
-                        <li class="res__data" id="li-contac"><span class="negritas">contacto:</span></li>
-                        <li class="res__data" id="li-fecha"><span class="negritas">fecha:</span></li>
-                        <li class="res__data" id="li-total"><span class="negritas">total:</span></li>
+                        <li class="res__data" id="li-name">
+                            <span class="negritas">nombre:</span>
+                            <p class="li__name"></p>
+                        </li>
+                        <li class="res__data" id="li-rfc">
+                            <span class="negritas">RCF:</span>
+                            <p class="li__rfc"></p>
+                        </li>
+                        <li class="res__data" id="li-direc">
+                            <span class="negritas">direccion:</span>
+                            <p class="li__direc"></p>
+                        </li>
+                        <li class="res__data" id="li-contact">
+                            <span class="negritas">contacto:</span>
+                            <p class="li__contact"></p>
+                        </li>
+                        <li class="res__data" id="li-date">
+                            <span class="negritas">fecha:</span>
+                            <p class="li__date"></p>
+                        </li>
+                        <li class="res__data" id="li-total">
+                            <span class="negritas">total:</span>
+                            <p class="li__total"></p>
+                        </li>
                     </ul>
                 </div>
             </div>
         </section>
     </div>
-                
+
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
